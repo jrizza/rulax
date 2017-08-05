@@ -1,0 +1,65 @@
+
+                      UNLAM - TP4 - LA RULAX
+                   -----------------------------
+
+La Rulax es el tipico juego de la ruleta que se puede encontrar en
+cualquier casino.
+Esta aplicacion esta desarrollada en C++ y Ncurses para la interfaz
+con el usuario.
+
+INFORMACION
+
+Ultima Revision #: 75
+Fecha: 08-11-2007 12:36 AM
+									 
+PREREQUISITOS
+
+Para la instalacion de La Rulax se deben disponer de las siguientes
+aplicaciones y bibliotecas:
+
+   make >= 3.79.1
+   gcc >= 2.96
+   Ncurses >= 1.125
+
+INSTALACION
+
+Para poder ejecutar "La Rulax" es necesario ejecutar los siguientes
+comandos:
+
+   $ make clean
+   $ make 
+
+EJECUTANDO UN SERVIDOR
+
+Para ejecutar un servidor antes que nada hay que editar el archivo
+de configuracion server.cfg, una vez editado el mismo nos disponemos
+a ejecutar el servidor con el siguiente comando:
+
+   $ server
+
+EJECUTANDO UN CLIENTE
+
+Para ejecutar un cliente debemos ejecutar el siguiente comando:
+
+   $ client <IP> <PUERTO> <NOMBRE DE JUGADOR>
+
+	 IP: Corresponde a la IP de la computadora que esta ejecutando
+	     el servidor.
+
+	 PUERTO: Corresponde al puerto en el cual el servidor esta 
+	         escuchando (Default: 7777).
+
+	 NOMBRE DE JUGADOR: Es el nombre con el cual nos identificaremos en
+	                    el juego.
+
+DOCUMENTACION
+
+Se disponen de los siguientes archivos para documentacion detallada
+tanto para el servidor como para el cliente:
+
+   README: Esta ayuda.
+
+	 README.client: Ayuda para la utilizacion del cliente.
+
+	 README.server: Ayuda para la utilizacion del servidor.
+
