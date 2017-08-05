@@ -1,51 +1,19 @@
+# USING THE CLIENT
 
-                      UNLAM - TP4 - LA RULAX
-                   -----------------------------
+Use the following commands:
 
-EJECUTANDO UN CLIENTE
+## MOVING THE CURSOR
 
-Para ejecutar un cliente debemos ejecutar el siguiente comando:
+Arrows: use them to move the cursors across the whole screen.
 
-   $ client <IP> <PUERTO> <NOMBRE DE JUGADOR>
+Page-up / Page-down: fastest horizontal movement.
 
-	 IP: Corresponde a la IP de la computadora que esta ejecutando
-	     el servidor.
+Home / End: Place us at the beggining or the end of the board.
 
-	 PUERTO: Corresponde al puerto en el cual el servidor esta 
-	         escuchando (Default: 7777).
+## BETS
 
-	 NOMBRE DE JUGADOR: Es el nombre con el cual nos identificaremos en
-	                    el juego.
+Enter: Use ENTER to place a bet, bets are from 1 to 99, for bigger bets, use "1C" (100), "2C" (200), etc.
 
-UTILIZACION DEL CLIENTE
+## EXIT
 
-Los comandos habilitados en el cliente son los siguientes:
-
-   DESPLAZAMIENTO
-
-	    Flechas: Permite el movimiento del cursor en toda la pantalla.
-
-	    Page-up / Page-down: Permite un rapido desplazamiento horizontal. 
-
-	    Home / End: Permite ubicarnos al principio o al final del tablero.
-
-   APUESTAS
-
-	    Enter: Una vez ubicados en un casilero, presionando la tecla ENTER
-			       vamos a tener la posibilidad de ingresar una apuesta.
-
-             Las apuestas constan de dos digitos: para apuestas de 1 a 99
-             se ingresan directamente los digitos. Las apuestas mayores a
-             99 se ingresan en incrementos de a 100 (100, 200, 300, etc) y
-             se ingresan por teclado como un digito seguido de la letra C
-             (1C, 2C, 3C, etc).
-
-             Es posible incrementar una apuesta apostando nuevamente en un
-             casillero ocupado; no es posible retirar las apuestas una vez
-             colocadas en la mesa.
-
-   SALIR
-
-      Esc:   Sale del juego de manera elegante, solo durante el perido de
-             apuestas y avisando a todos los otros jugadores. 
-
+Esc: will exit the game in an elegant way, only during bet time and letting other clients that you have left the game.

@@ -1,36 +1,19 @@
+# CONFIG FILE
 
-                      UNLAM - TP4 - LA RULAX
-                   -----------------------------
+   Port: Client port
 
-EJECUTANDO UN SERVIDOR
+   MaxPlayers: Number of allowed players
 
-Para ejecutar un servidor antes que nada hay que editar el archivo
-de configuracion server.cfg, una vez editado el mismo nos disponemos
-a ejecutar el servidor con el siguiente comando:
+   InitialFunds: Initial amout for each player
 
-   $ server
+   BudgetRate: Used to calculate the Casino's total budget
 
-EL ARCHIVO DE CONFIGURACION
+      Casino's budget = InitialFunds * BudgetRate
 
-El archivo de configuracion "server.cfg" cuenta con los siguientes parametros:
+   BetTime: Time that the user have to place a bet
 
-   Port: El puerto en el cual el servidor va a estar escuchando.
+   MaxBet: Max amout for betting
 
-   MaxPlayers: La cantidad total de jugadores permitidos simultaneamente.
+# CLOSING THE SERVER
 
-   InitialFunds: Monto con el cual comenzara cada nuevo jugador.
-
-   BudgetRate: El BudgetRate se utiliza para calcular el monto total de la banca,
-	             el calculo es el siguiente: 
-
-							 Monto total de la banca = InitialFunds * BudgetRate
-
-   BetTime: Es el tiempo que tienen los jugadores para realizar las apuestas
-
-   MaxBet: Es el monto maximo por apuesta.
-
-CERRANDO EL SERVIDOR
-
-Para cerrar el servidor de forma elegante se le debe enviar una senial SIGINT, 
-ya sea mediante un kill o un Ctrl+C. De esta forma, el servidor se encargara
-de desconectar a todos los jugadores y liberar los recursos tomados.
+Just Control+C to kill the server.
